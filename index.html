@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Weather</h1>
+    <div class="weather-app">
+    <header>
+        <button id="search-button">Search</button>
+<form id="search-form" style="display: none;">
+  <input type="search" placeholder="Enter a city.." id="search-input" required/>
+  <button type="submit">Submit</button>
+</form>
+    </header>
+    <main>
+    <h1>Paris</h1>
+    <p>Wednesday 12:30, fog <br>
+        Humidity: 98%, Wind: 2.57km/h</p>
+        💨 5˚C
+</main>
     <footer>Coded by 
         <a href="https://github.com/loisMac" target="_blank">Lois Macleod</a>, open-sourced  
          <a href="https://github.com/loisMac/final-weather" target="_blank">on Github</a>
          and hosted <a href="https://code-noob-weather.netlify.app/" target="_blank">
             on Netlify.
          </a>
-
+</div>
     </footer>
+    <script src="src/index.js"></script>
 </body>
 </html>
