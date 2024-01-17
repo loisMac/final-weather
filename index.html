@@ -3,23 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="weather-app">
     <header>
-        <button id="search-button">Search</button>
-<form id="search-form" style="display: none;">
-  <input type="search" placeholder="Enter a city.." id="search-input" required/>
-  <button type="submit">Submit</button>
-</form>
+        <form class="search-form">
+            <input type="search" 
+            placeholder="Enter a city.."
+            required
+            class="search-form-input">
+            <input type="submit" value="Search" class="search-form-button">
+        </form>
     </header>
     <main>
+        <div class="weather-app-data">
+        <div>
     <h1>Paris</h1>
     <p>Wednesday 12:30, fog <br>
         Humidity: 98%, Wind: 2.57km/h</p>
-        💨 5˚C
+    </div>
+        <div>💨 5˚C</div>
+    </div>
 </main>
     <footer>Coded by 
         <a href="https://github.com/loisMac" target="_blank">Lois Macleod</a>, open-sourced  
