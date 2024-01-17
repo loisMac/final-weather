@@ -18,7 +18,7 @@ header {
 }
 
 .weather-app {
-
+    max-height: 800px;
     max-width: 600px;
     background: white;
     margin: 0 auto;
@@ -83,13 +83,19 @@ main {
 }
 
 .weather-app-icon {
-    font-size: 44px;
-    margin-top: 22px;
+    font-size: 66px;
+    margin-top: 11px;
 }
 
 .weather-app-temperature {
     font-size: 88px;
     font-weight: 700;
+    margin-left: 10px;
+}
+
+.weather-app-unit {
+    margin-top: 18px;
+    font-size: 28px;
 }
 
 footer {
