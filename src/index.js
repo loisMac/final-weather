@@ -1,12 +1,9 @@
-const searchButton = document.getElementById('search-button');
-const searchForm = document.getElementById('search-form');
-
-searchButton.addEventListener('click', function() {
-  searchForm.style.display = 'block';
-});
-
-searchForm.addEventListener('submit', function(event) {
+function handleSearchSubmit(event) {
   event.preventDefault();
-  const searchTerm = document.getElementById('search-input').value;
-  
-});
+  let searchInput = document.querySelector("#search-form-input");
+  let cityElement = document.querySelector("#city");
+  cityElement.innerHTML = searchInput.value;
+}
+
+let searchFormElement = document.querySelector("#search-form");
+searchFormElement.addEventListener("submit", handleSearchSubmit);
