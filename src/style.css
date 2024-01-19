@@ -19,7 +19,7 @@ header {
 
 .weather-app {
     max-height: 800px;
-    max-width: 800px;
+    max-width: 600px;
     background: #ffffff;
     margin: 0 auto;
     padding: 30px;
